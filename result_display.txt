@@ -1,0 +1,13 @@
+public class Result {
+    public static void main(String[] args) {
+        String usn = "1VT21CS001";
+        String name = "Rahul Kumar";
+        double sgpa = 8.5;
+        String status = sgpa >= 5.0 ? "PASS" : "FAIL";
+
+        System.out.println("USN: " + usn);
+        System.out.println("Name: " + name);
+        System.out.println("SGPA: " + sgpa);
+        System.out.println("Result: " + status);
+    }
+}
