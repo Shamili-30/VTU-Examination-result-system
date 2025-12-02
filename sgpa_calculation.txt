@@ -1,0 +1,15 @@
+public class SGPA {
+    public static void main(String[] args) {
+        int[] credits = {4, 3, 3};       // subject credits
+        int[] gradePoints = {9, 8, 7};   // grade points (A=9, B=8, C=7)
+
+        int totalCredits = 0, weightedSum = 0;
+        for (int i = 0; i < credits.length; i++) {
+            weightedSum += credits[i] * gradePoints[i];
+            totalCredits += credits[i];
+        }
+
+        double sgpa = (double) weightedSum / totalCredits;
+        System.out.println("SGPA = " + sgpa);
+    }
+}
